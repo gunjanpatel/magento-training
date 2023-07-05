@@ -1,0 +1,51 @@
+Jun 25 08:44:23 18080-php-fpm postfix/master[421]: daemon started -- version 3.4.13, configuration /etc/postfix
+Jun 26 00:00:01 18080-php-fpm postfix/pickup[2198]: C5A0F3240129: uid=0 from=<root>
+Jun 26 00:00:01 18080-php-fpm postfix/cleanup[2218]: C5A0F3240129: message-id=<20230626000001.C5A0F3240129@24.mdoq.io>
+Jun 26 00:00:01 18080-php-fpm postfix/qmgr[424]: C5A0F3240129: from=<root@24.mdoq.io>, size=808, nrcpt=1 (queue active)
+Jun 26 00:00:01 18080-php-fpm postfix/smtp[2220]: connect to 24.mdoq.io[135.148.55.40]:25: Connection refused
+Jun 26 00:00:01 18080-php-fpm postfix/smtp[2220]: C5A0F3240129: to=<root@24.mdoq.io>, orig_to=<root>, relay=none, delay=0.03, delays=0.01/0.02/0/0, dsn=4.4.1, status=deferred (connect to 24.mdoq.io[135.148.55.40]:25: Connection refused)
+Jun 26 00:09:29 18080-php-fpm postfix/qmgr[424]: C5A0F3240129: from=<root@24.mdoq.io>, size=808, nrcpt=1 (queue active)
+Jun 26 00:09:29 18080-php-fpm postfix/smtp[2253]: connect to 24.mdoq.io[135.148.55.40]:25: Connection refused
+Jun 26 00:09:29 18080-php-fpm postfix/smtp[2253]: C5A0F3240129: to=<root@24.mdoq.io>, orig_to=<root>, relay=none, delay=567, delays=567/0.01/0/0, dsn=4.4.1, status=deferred (connect to 24.mdoq.io[135.148.55.40]:25: Connection refused)
+Jun 26 00:19:29 18080-php-fpm postfix/qmgr[424]: C5A0F3240129: from=<root@24.mdoq.io>, size=808, nrcpt=1 (queue active)
+Jun 26 00:19:29 18080-php-fpm postfix/smtp[2259]: connect to 24.mdoq.io[135.148.55.40]:25: Connection refused
+Jun 26 00:19:29 18080-php-fpm postfix/smtp[2259]: C5A0F3240129: to=<root@24.mdoq.io>, orig_to=<root>, relay=none, delay=1168, delays=1168/0.01/0/0, dsn=4.4.1, status=deferred (connect to 24.mdoq.io[135.148.55.40]:25: Connection refused)
+Jun 26 00:39:29 18080-php-fpm postfix/qmgr[424]: C5A0F3240129: from=<root@24.mdoq.io>, size=808, nrcpt=1 (queue active)
+Jun 26 00:39:29 18080-php-fpm postfix/smtp[2291]: connect to 24.mdoq.io[135.148.55.40]:25: Connection refused
+Jun 26 00:39:29 18080-php-fpm postfix/smtp[2291]: C5A0F3240129: to=<root@24.mdoq.io>, orig_to=<root>, relay=none, delay=2368, delays=2368/0.01/0/0, dsn=4.4.1, status=deferred (connect to 24.mdoq.io[135.148.55.40]:25: Connection refused)
+Jun 26 01:19:29 18080-php-fpm postfix/qmgr[424]: C5A0F3240129: from=<root@24.mdoq.io>, size=808, nrcpt=1 (queue active)
+Jun 26 01:19:29 18080-php-fpm postfix/smtp[2326]: connect to 24.mdoq.io[135.148.55.40]:25: Connection refused
+Jun 26 01:19:29 18080-php-fpm postfix/smtp[2326]: C5A0F3240129: to=<root@24.mdoq.io>, orig_to=<root>, relay=none, delay=4767, delays=4767/0.01/0/0, dsn=4.4.1, status=deferred (connect to 24.mdoq.io[135.148.55.40]:25: Connection refused)
+Jun 26 02:29:29 18080-php-fpm postfix/qmgr[424]: C5A0F3240129: from=<root@24.mdoq.io>, size=808, nrcpt=1 (queue active)
+Jun 26 02:29:29 18080-php-fpm postfix/smtp[2393]: connect to 24.mdoq.io[135.148.55.40]:25: Connection refused
+Jun 26 02:29:29 18080-php-fpm postfix/smtp[2393]: C5A0F3240129: to=<root@24.mdoq.io>, orig_to=<root>, relay=none, delay=8968, delays=8968/0.01/0/0, dsn=4.4.1, status=deferred (connect to 24.mdoq.io[135.148.55.40]:25: Connection refused)
+Jun 26 03:39:29 18080-php-fpm postfix/qmgr[424]: C5A0F3240129: from=<root@24.mdoq.io>, size=808, nrcpt=1 (queue active)
+Jun 26 03:39:29 18080-php-fpm postfix/smtp[2491]: connect to 24.mdoq.io[135.148.55.40]:25: Connection refused
+Jun 26 03:39:29 18080-php-fpm postfix/smtp[2491]: C5A0F3240129: to=<root@24.mdoq.io>, orig_to=<root>, relay=none, delay=13168, delays=13167/0.01/0/0, dsn=4.4.1, status=deferred (connect to 24.mdoq.io[135.148.55.40]:25: Connection refused)
+Jun 26 04:49:29 18080-php-fpm postfix/qmgr[424]: C5A0F3240129: from=<root@24.mdoq.io>, size=808, nrcpt=1 (queue active)
+Jun 26 04:49:29 18080-php-fpm postfix/smtp[2556]: connect to 24.mdoq.io[135.148.55.40]:25: Connection refused
+Jun 26 04:49:29 18080-php-fpm postfix/smtp[2556]: C5A0F3240129: to=<root@24.mdoq.io>, orig_to=<root>, relay=none, delay=17368, delays=17368/0.01/0/0, dsn=4.4.1, status=deferred (connect to 24.mdoq.io[135.148.55.40]:25: Connection refused)
+Jun 26 05:59:29 18080-php-fpm postfix/qmgr[424]: C5A0F3240129: from=<root@24.mdoq.io>, size=808, nrcpt=1 (queue active)
+Jun 26 05:59:29 18080-php-fpm postfix/smtp[2620]: connect to 24.mdoq.io[135.148.55.40]:25: Connection refused
+Jun 26 05:59:29 18080-php-fpm postfix/smtp[2620]: C5A0F3240129: to=<root@24.mdoq.io>, orig_to=<root>, relay=none, delay=21567, delays=21567/0.01/0/0, dsn=4.4.1, status=deferred (connect to 24.mdoq.io[135.148.55.40]:25: Connection refused)
+Jun 26 07:09:29 18080-php-fpm postfix/qmgr[424]: C5A0F3240129: from=<root@24.mdoq.io>, size=808, nrcpt=1 (queue active)
+Jun 26 07:09:29 18080-php-fpm postfix/smtp[2824]: connect to 24.mdoq.io[135.148.55.40]:25: Connection refused
+Jun 26 07:09:29 18080-php-fpm postfix/smtp[2824]: C5A0F3240129: to=<root@24.mdoq.io>, orig_to=<root>, relay=none, delay=25768, delays=25768/0.01/0/0, dsn=4.4.1, status=deferred (connect to 24.mdoq.io[135.148.55.40]:25: Connection refused)
+Jun 26 08:19:29 18080-php-fpm postfix/qmgr[424]: C5A0F3240129: from=<root@24.mdoq.io>, size=808, nrcpt=1 (queue active)
+Jun 26 08:19:29 18080-php-fpm postfix/smtp[3403]: connect to 24.mdoq.io[135.148.55.40]:25: Connection refused
+Jun 26 08:19:29 18080-php-fpm postfix/smtp[3403]: C5A0F3240129: to=<root@24.mdoq.io>, orig_to=<root>, relay=none, delay=29967, delays=29967/0.01/0/0, dsn=4.4.1, status=deferred (connect to 24.mdoq.io[135.148.55.40]:25: Connection refused)
+Jun 26 09:29:30 18080-php-fpm postfix/qmgr[424]: C5A0F3240129: from=<root@24.mdoq.io>, size=808, nrcpt=1 (queue active)
+Jun 26 09:29:30 18080-php-fpm postfix/smtp[3483]: connect to 24.mdoq.io[135.148.55.40]:25: Connection refused
+Jun 26 09:29:30 18080-php-fpm postfix/smtp[3483]: C5A0F3240129: to=<root@24.mdoq.io>, orig_to=<root>, relay=none, delay=34169, delays=34169/0.01/0/0, dsn=4.4.1, status=deferred (connect to 24.mdoq.io[135.148.55.40]:25: Connection refused)
+Jun 26 10:39:30 18080-php-fpm postfix/qmgr[424]: C5A0F3240129: from=<root@24.mdoq.io>, size=808, nrcpt=1 (queue active)
+Jun 26 10:39:30 18080-php-fpm postfix/smtp[3630]: connect to 24.mdoq.io[135.148.55.40]:25: Connection refused
+Jun 26 10:39:30 18080-php-fpm postfix/smtp[3630]: C5A0F3240129: to=<root@24.mdoq.io>, orig_to=<root>, relay=none, delay=38368, delays=38368/0.01/0/0, dsn=4.4.1, status=deferred (connect to 24.mdoq.io[135.148.55.40]:25: Connection refused)
+Jun 26 11:49:30 18080-php-fpm postfix/qmgr[424]: C5A0F3240129: from=<root@24.mdoq.io>, size=808, nrcpt=1 (queue active)
+Jun 26 11:49:30 18080-php-fpm postfix/smtp[4746]: connect to 24.mdoq.io[135.148.55.40]:25: Connection refused
+Jun 26 11:49:30 18080-php-fpm postfix/smtp[4746]: C5A0F3240129: to=<root@24.mdoq.io>, orig_to=<root>, relay=none, delay=42568, delays=42568/0.01/0/0, dsn=4.4.1, status=deferred (connect to 24.mdoq.io[135.148.55.40]:25: Connection refused)
+Jun 26 12:59:30 18080-php-fpm postfix/qmgr[424]: C5A0F3240129: from=<root@24.mdoq.io>, size=808, nrcpt=1 (queue active)
+Jun 26 12:59:30 18080-php-fpm postfix/smtp[5045]: connect to 24.mdoq.io[135.148.55.40]:25: Connection refused
+Jun 26 12:59:30 18080-php-fpm postfix/smtp[5045]: C5A0F3240129: to=<root@24.mdoq.io>, orig_to=<root>, relay=none, delay=46769, delays=46769/0.01/0/0, dsn=4.4.1, status=deferred (connect to 24.mdoq.io[135.148.55.40]:25: Connection refused)
+Jun 26 14:09:31 18080-php-fpm postfix/qmgr[424]: C5A0F3240129: from=<root@24.mdoq.io>, size=808, nrcpt=1 (queue active)
+Jun 26 14:09:31 18080-php-fpm postfix/smtp[5223]: connect to 24.mdoq.io[135.148.55.40]:25: Connection refused
+Jun 26 14:09:31 18080-php-fpm postfix/smtp[5223]: C5A0F3240129: to=<root@24.mdoq.io>, orig_to=<root>, relay=none, delay=50970, delays=50970/0.01/0/0, dsn=4.4.1, status=deferred (connect to 24.mdoq.io[135.148.55.40]:25: Connection refused)

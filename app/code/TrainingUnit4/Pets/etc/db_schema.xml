@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<schema xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:framework:Setup/Declaration/Schema/etc/schema.xsd">
+    <table name="pet" engine="innodb" resource="default">
+        <column name="pet_id" xsi:type="int" padding="10" unsigned="true" nullable="false" identity="true"
+                comment="Pet ID"/>
+        <column name="customer_id" xsi:type="int" padding="10" unsigned="true" nullable="false" identity="false"
+                comment="Customer ID"/>
+        <column name="pet_name" xsi:type="varchar" nullable="false" length="32" comment="Customer ID"/>
+        <column name="created_at" xsi:type="timestamp" nullable="false" default="CURRENT_TIMESTAMP" on_update="false"/>
+        <column name="updated_at" xsi:type="timestamp" nullable="false" default="CURRENT_TIMESTAMP" on_update="true"/>
+
+        <constraint xsi:type="primary" referenceId="PRIMARY">
+            <column name="pet_id"/>
+        </constraint>
+
+        <!-- referenceId will be generated in db_schema_whitelist.json and can be replaced after wards -->
+        <constraint xsi:type="foreign"
+                    referenceId="PET_CUSTOMER_ID_CUSTOMER_ENTITY_ENTITY_ID"
+                    onDelete="CASCADE"
+                    table="pet"
+                    column="customer_id"
+                    referenceTable="customer_entity"
+                    referenceColumn="entity_id"
+        />
+        <!-- referenceId will be generated in db_schema_whitelist.json and can be replaced after wards -->
+        <index indexType="btree" referenceId="PET_PET_NAME">
+            <column name="pet_name"/>
+        </index>
+    </table>
+</schema>

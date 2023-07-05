@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Config:etc/system_file.xsd">
+    <system>
+        <section id="general">
+            <group id="unit4"
+                   translate="label"
+                   showInDefault="1"
+                   showInStore="1"
+                   showInWebsite="1"
+                   type="text"
+                   sortOrder="100"
+            >
+                <label>Unit4 Fields</label>
+                <field id="test"
+                       type="select"
+                       sortOrder="4"
+                       translate="label"
+                       showInDefault="1"
+                       showInStore="0"
+                       showInWebsite="0"
+                >
+                    <label>Test</label>
+                    <comment><![CDATA[This is a test select field]]></comment>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                </field>
+
+            </group>
+        </section>
+    </system>
+</config>

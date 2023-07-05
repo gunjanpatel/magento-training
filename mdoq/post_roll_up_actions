@@ -1,0 +1,40 @@
+#!/bin/bash
+
+ARGUMENT_COMPARISON_AHEAD=AHEAD
+ARGUMENT_COMPARISON_IDENTICAL=IDENTICAL
+ARGUMENT_COMPARISON_BEHIND=BEHIND
+
+ARGUMENT_STEP_BEFORE_COMPOSER=BEFORE_COMPOSER
+ARGUMENT_STEP_BEFORE_MAGENTO_COMMANDS=BEFORE_MAGENTO_COMMANDS
+ARGUMENT_STEP_BEFORE_COMMON_TOOLS=BEFORE_COMMON_TOOLS
+ARGUMENT_STEP_FINAL=FINAL
+
+INPUT="$1-$2"
+
+case $INPUT in
+    "${ARGUMENT_STEP_FINAL}-"*)
+        set -xe
+		if [[ "${HOSTNAME}" != *"10943"* ]]; then
+				if [ -f pub/media.tar.gz ]; then
+					# if [ -d pub/media ]; then
+					# 	rm -rf pub/media
+					# fi
+					# mkdir pub/media
+					tar -xf pub/media.tar.gz -C pub/media
+				else
+					echo "pub/media.tar.gz not found"
+			fi
+			php bin/magento config:set twofactorauth/general/enable 0
+			php bin/magento cache:enable
+			php bin/magento cache:flush
+
+		else
+			echo "not extracting media because it's production"
+		fi
+		# php bin/magento config:set catalog/search/engine elasticsearch7
+		# php bin/magento config:set catalog/search/elasticsearch7_server_hostname $(php bin/magento config:show catalog/search/elasticsearch6_server_hostname)
+        ;;
+    *)
+        echo "No actions for: ${INPUT}"
+        exit 0
+esac

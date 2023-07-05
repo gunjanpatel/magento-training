@@ -1,0 +1,20 @@
+[26-Jun-2023 12:49:59 UTC] PHP Fatal error:  Uncaught Magento\Framework\Exception\LocalizedException: Invalid Document 
+Element 'type': Character content other than whitespace is not allowed because the content type is 'element-only'.
+Line: 4
+ in /home/magento/htdocs/vendor/magento/framework/Config/Reader/Filesystem.php:168
+Stack trace:
+#0 /home/magento/htdocs/vendor/magento/framework/Config/Reader/Filesystem.php(132): Magento\Framework\Config\Reader\Filesystem->_readFiles(Object(Magento\Framework\Config\FileIterator))
+#1 /home/magento/htdocs/generated/code/Magento/Framework/ObjectManager/Config/Reader/Dom/Proxy.php(95): Magento\Framework\Config\Reader\Filesystem->read('frontend')
+#2 /home/magento/htdocs/vendor/magento/framework/Interception/Config/Config.php(204): Magento\Framework\ObjectManager\Config\Reader\Dom\Proxy->read('frontend')
+#3 /home/magento/htdocs/vendor/magento/framework/Interception/Config/Config.php(190): Magento\Framework\Interception\Config\Config->generateIntercepted(Array)
+#4 /home/magento/htdocs/vendor/magento/framework/Interceptio in /home/magento/htdocs/vendor/magento/framework/Config/Reader/Filesystem.php on line 168
+[26-Jun-2023 12:50:03 UTC] PHP Fatal error:  Uncaught Magento\Framework\Exception\LocalizedException: Invalid Document 
+Element 'type': Character content other than whitespace is not allowed because the content type is 'element-only'.
+Line: 4
+ in /home/magento/htdocs/vendor/magento/framework/Config/Reader/Filesystem.php:168
+Stack trace:
+#0 /home/magento/htdocs/vendor/magento/framework/Config/Reader/Filesystem.php(132): Magento\Framework\Config\Reader\Filesystem->_readFiles(Object(Magento\Framework\Config\FileIterator))
+#1 /home/magento/htdocs/generated/code/Magento/Framework/ObjectManager/Config/Reader/Dom/Proxy.php(95): Magento\Framework\Config\Reader\Filesystem->read('frontend')
+#2 /home/magento/htdocs/vendor/magento/framework/Interception/Config/Config.php(204): Magento\Framework\ObjectManager\Config\Reader\Dom\Proxy->read('frontend')
+#3 /home/magento/htdocs/vendor/magento/framework/Interception/Config/Config.php(190): Magento\Framework\Interception\Config\Config->generateIntercepted(Array)
+#4 /home/magento/htdocs/vendor/magento/framework/Interceptio in /home/magento/htdocs/vendor/magento/framework/Config/Reader/Filesystem.php on line 168

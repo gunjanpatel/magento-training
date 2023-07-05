@@ -1,0 +1,11 @@
+--- Setup/Patch/Schema/InitializeStoresAndWebsites.php	2020-04-13 17:35:42.000000000 +0000
++++ Setup/Patch/Schema/InitializeStoresAndWebsites.php	2020-06-22 14:24:13.801830924 +0000
+@@ -135,6 +135,7 @@
+                     'is_active' => 1
+                 ]
+             );
++            \Magento\Framework\App\ObjectManager::getInstance()->get(\Magento\Framework\App\Config::class)->clean();
+             $this->schemaSetup->endSetup();
+         }
+     }
+

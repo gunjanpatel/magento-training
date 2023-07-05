@@ -1,0 +1,11 @@
+--- Model/Client/Elasticsearch.orig.php 2021-01-29 10:20:13.511000000 +0000
++++ Model/Client/Elasticsearch.php      2021-01-29 10:20:25.639805107 +0000
+@@ -274,6 +274,7 @@
+         $params = [
+             'index' => $index,
+             'type' => $entityType,
++            'include_type_name' => true,
+             'body' => [
+                 $entityType => [
+                     'properties' => [],
+

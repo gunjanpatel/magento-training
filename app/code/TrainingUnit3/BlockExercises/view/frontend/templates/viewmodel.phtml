@@ -1,0 +1,13 @@
+<?php
+
+/** @var \Magento\Framework\Escaper $escaper */
+
+/** @var \TrainingUnit3\BlockExercises\ViewModel\ArrayProviderViewModel $viewModel */
+$viewModel = $block->getDataUsingMethod('view_model');
+?>
+<h1>View Model Example</h1>
+<ul>
+    <?php foreach ($viewModel->getArrayData() as $value): ?>
+        <li><?php echo $value; ?></li>
+    <?php endforeach; ?>
+</ul>

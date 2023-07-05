@@ -1,0 +1,32 @@
+--- SearchAdapter/ResponseFactory.orig.php      2021-01-29 10:17:50.598000000 +0000
++++ SearchAdapter/ResponseFactory.php   2021-01-29 10:18:20.697861745 +0000
+@@ -69,6 +69,19 @@
+                 $rawDocument
+             );
+         }
++
++        if(!is_numeric($response['total'])){
++            if(isset($response['total']['value']) && is_numeric($response['total']['value'])){
++                $total = $response['total']['value'];
++            }else{
++                throw new \InvalidArgumentException(
++                        'Unexpected response: '.json_encode($response['total'])
++                );
++            }
++        }else{
++            $total = (int)$response['total'];
++        }
++
+         /** @var \Magento\Framework\Search\Response\Aggregation $aggregations */
+         $aggregations = $this->aggregationFactory->create($response['aggregations']);
+         return $this->objectManager->create(
+@@ -76,7 +89,7 @@
+             [
+                 'documents' => $documents,
+                 'aggregations' => $aggregations,
+-                'total' => $response['total']
++                'total' => $total,
+             ]
+         );
+     }
+
